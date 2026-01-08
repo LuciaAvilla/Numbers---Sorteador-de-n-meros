@@ -1,0 +1,87 @@
+.infoSection {
+    display: flex;
+    flex-direction: column;
+    /* Faz os itens ficarem um embaixo do outro */
+    align-items: flex-start;
+    /* Alinha tudo à esquerda */
+}
+
+.logoWrapper {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 11px;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 89px;
+}
+
+.badge {
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    color: var(--content-gray-light);
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: 72px;
+    font-family: var(--font-family);
+    font-weight: 800;
+    line-height: 130%;
+    margin-bottom: 38px;
+}
+
+.faq {
+    max-width: 386px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.faqItem {
+    line-height: 150%;
+
+    & h3 {
+        color: var(--content-brand);
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    & p {
+        color: var(--content-secondary);
+        font-size: 14px;
+
+    }
+
+    & img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain
+    }
+}
+
+.actionSection {
+    max-width: 482px;
+}
+
+.card {
+    max-width: 482px;
+    margin-top: 170px;
+
+    & h2 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 150%;
+        margin-bottom: 2px;
+    }
+
+    .description {
+        color: var(--content-secondary);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 150%;
+        margin-bottom: 40px;
+    }
+}

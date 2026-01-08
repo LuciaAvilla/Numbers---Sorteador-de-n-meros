@@ -11,17 +11,17 @@
         href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
 
     <title>Numbers - Sorteador de Números</title>
 </head>
 
 <body>
     <main class="container">
-        <section class="info-section">
+        <section class="infoSection">
 
 
-            <div class="logo-wrapper">
+            <div class="logoWrapper">
                 <img src="img/logo.png" alt="Numbers Logo">
                 <span>NUMBERS</span>
             </div>
@@ -32,33 +32,37 @@
             <h1>SORTEADOR <br> DE NÚMEROS</h1>
 
             <div class="faq">
+
                 <div class="faqItem">
                     <h3>
-                        <img src="icon-question.svg" alt="">
+                        <img src="/img/person.png" alt="person icon">
                         Como funciona o sorteador de números?
                     </h3>
                     <p>O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo
                         especificado pelo usuário.</p>
                 </div>
-                <div class="faq-item">
+
+                <div class="faqItem">
                     <h3>
-                        <img src="icon-question.svg" alt="">
+                        <img src="/img/person.png" alt="person icon">
                         Posso escolher o intervalo dos números?
                     </h3>
                     <p>Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.</p>
                 </div>
+
             </div>
+
         </section>
 
-        <section class="action-section">
+        <section class="actionSection">
 
-            <div id="screen-setup" class="card">
+            <div id="screenSetup" class="card">
                 <h2>QUERO SORTEAR:</h2>
                 <p class="description">defina o intervalo e a quantidade de números, clique em "Sortear" e veja os
                     resultados na tela. É rápido e fácil!</p>
 
-                <form id="draw-form">
-                    <div class="input-group">
+                <form id="drawForm">
+                    <div class="inputGroup">
                         <div class="field">
                             <label>NÚMEROS</label>
                             <input type="number" id="quantity" value="2">
@@ -73,7 +77,7 @@
                         </div>
                     </div>
 
-                    <div class="switch-field">
+                    <div class="switchField">
                         <label class="switch">
                             <input type="checkbox" id="no-repeat" checked>
                             <span class="slider"></span>
@@ -81,26 +85,26 @@
                         <span>Não repetir número</span>
                     </div>
 
-                    <button type="submit" class="btn-primary">
-                        SORTEAR <span class="arrow">&rarr;</span>
+                    <button type="submit" class="btnPrimary">
+                        SORTEAR <img class="btnIcon" src="/img/arrow.png" alt="arrow icon">
                     </button>
                 </form>
             </div>
 
-            <div id="screen-result" class="card" style="display: none;">
-                <div class="result-header">
+            <div id="screenResult" class="card" style="display: none;">
+                <div class="resultHeader">
                     <h2>RESULTADO DO SORTEIO</h2>
-                    <span class="result-count">1º RESULTADO</span>
+                    <span class="resultCount">1º RESULTADO</span>
                 </div>
 
-                <div id="numbers-display" class="numbers-grid">
-                    <span class="number-ball">23</span>
-                    <span class="number-ball">12</span>
+                <div id="numbersDisplay" class="numbersGrid">
+                    <span class="numberBall">23</span>
+                    <span class="numberBall">12</span>
                 </div>
 
-                <button id="btn-restart" class="btn-secondary">
+                <button id="btnRestart" class="btnSecondary">
                     SORTEAR NOVAMENTE
-                    <img src="icon-restart.svg" alt="Restart">
+                    <img src="iconRestart.svg" alt="Restart">
                 </button>
             </div>
 
