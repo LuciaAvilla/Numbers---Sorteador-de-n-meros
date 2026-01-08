@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* fontes */
+    --font-family: "Sora", sans-serif;
+    --font-primary: "Roboto Flex", sans-serif;
+    --font-secondary: "Roboto Mono", monospace;
+
+    /* colors content */
+    --content-primary: #FFFFFF;
+    --content-secondary: #C7C9CC;
+    --content-tertiary: #D9D9D9;
+    --content-brand: #C58DE7;
+    --color-inverse: #030203;
+
+    /* colors background */
+    --background-primary: #020202;
+    --background-secondary: #111012;
+    --background-tertiary: #24222E;
+    --background-brand: #C58DE7;
+    --background-gray: #3D3D3D;
+
+    /* Accent */
+    --accent-pink: #D586E0;
+    --accent-blue: #91A1FA;
+    --accent-green: #77C0A8;
+    --accent-lime: #D1DC97;
+    --accent-red: #E9A9B3;
+    --content-gray-light: #C7C9CC;
+    --content-gray-dark: #3D3D3D;
+
+    /* Gradients */
+    --gradient-background: linear-gradient(90deg, var(--accent-pink) 0%, var(--accent-blue) 98.93%);
+    --gradient-content: linear-gradient(90deg, var(--content-gray-light) 0%, var(--content-gray-dark) 100%);
+    --gradient-border: linear-gradient(90deg,
+            #77C0AF 0%,
+            #D1DC97 14.84%,
+            #E9A9B3 32.15%,
+            #D586E0 65.79%,
+            #91A1FA 84.58%);
+}
+
+body {
+    background-color: var(--background-primary);
+    background-image: linear-gradient(to bottom,
+            #000000 0%,
+            #000000 20%,
+            rgba(0, 0, 0, 0.8) 50%,
+            transparent 100%), url('/img/background.png');
+    color: var(--content-primary);
+    font-family: var(--font-primary);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 108px;
+    /* Espaço entre a coluna da esquerda e a da direita */
+}
+
+/* Colunas */
+.info-section {
+    display: flex;
+    flex-direction: column;
+    /* Faz os itens ficarem um embaixo do outro */
+    align-items: flex-start;
+    /* Alinha tudo à esquerda */
+}
+
+.action-section {
+    width: 450px;
+    /* Largura fixa para o card de sorteio */
+}
+
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 11px;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 89px;
+}
+
+.badge {
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    color: var(--content-secondary);
+    margin-bottom: 12px;
+    /* letter-spacing: 2px; */
+}
+
+h1 {
+    font-size: 56px;
+    line-height: 100%;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: #111111;
+    /* Cinza bem escuro */
+    border: 1px solid #333333;
+    border-radius: 12px;
+    padding: 32px;
+}
+
+.input-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.field label {
+    font-size: 12px;
+    color: #888888;
+}
+
+.field input {
+    background: #1E1E1E;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    padding: 12px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.btn-primary {
+    width: 100%;
+    background: #222222;
+    color: white;
+    border: 1px solid #444444;
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #333333;
+}
