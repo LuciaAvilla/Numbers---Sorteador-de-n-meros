@@ -72,3 +72,7 @@ body {
     /* Espaço entre a coluna da esquerda e a da direita */
     gap: 108px;
 }
+
+.hidden {
+    display: none !important;
+}

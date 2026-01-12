@@ -6,11 +6,15 @@
     text-align: center;
     gap: 40px;
     /* Espaço entre o cabeçalho, os números e o botão */
+    width: 100%;
+    max-width: 482px;
+    /* Largura exata medida no seu Figma */
+    margin: 0 auto;
+
 }
 
 .resultHeader h2 {
     font-family: var(--font-family);
-    font-size: 20px;
     font-weight: 500;
     color: var(--content-primary);
     margin-bottom: 4px;
@@ -34,12 +38,14 @@
 
 .numberBall {
     font-family: var(--font-secondary);
+    color: var(--content-brand);
     font-size: 48px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .btnSecondary {
-    width: 100%;
+    width: 482px;
+    box-sizing: border-box;
     background: var(--background-tertiary);
     color: white;
     font-size: 16px;
@@ -47,7 +53,6 @@
     border: 1px solid transparent;
     padding: 16px;
     border-radius: 8px;
-    margin-top: 40px;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -56,7 +61,6 @@
     transition: 0.3s;
     position: relative;
     overflow: hidden;
-    display: flex;
     z-index: 1;
 }
 
@@ -107,10 +111,11 @@
 
 .btnSecondary img {
     width: 20px;
+    height: 20px;
     /* Tamanho do ícone de restart */
 }
 
-/* 1. Definimos a animação de rotação */
+/* 1. Define a animação de rotação */
 @keyframes spinThreeTimes {
     from {
         transform: rotate(0deg);
@@ -122,17 +127,16 @@
     }
 }
 
-/* 2. Aplicamos ao ícone quando o botão recebe o hover */
+/* 2. Aplica ao ícone quando o botão recebe o hover */
 .btnSecondary:hover img {
     /* spinThreeTimes: nome da animação
-       1.5s: duração total para as 3 voltas
        ease-in-out: começa devagar, corre e termina devagar
     */
-    animation: spinThreeTimes 1.5s ease-in-out;
+    animation: spinThreeTimes 4s ease-in-out;
 }
 
 /* Estilo base para garantir que o ícone suporte a rotação */
 .btnSecondary img {
     display: inline-block;
-    transition: transform 0.3s;
+    transition: transform 0.5s ease;
 }

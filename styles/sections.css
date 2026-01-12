@@ -64,6 +64,15 @@ h1 {
 
 .actionSection {
     max-width: 482px;
+    align-items: center;
+}
+
+#screenResult.card {
+    margin-top: 170px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .card {
